@@ -37,8 +37,6 @@ public class A1 extends BaseClass {
 	private void tc9(@Optional("abc@gmail.com")String e,@Optional("12345")String pass) {
 		
 		driver.get("https://en-gb.facebook.com/");
-
-		Fblogin f = new Fblogin();
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.sendKeys(ajithvijayakumar05@gmail.com);
