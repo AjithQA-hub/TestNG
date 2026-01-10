@@ -39,10 +39,10 @@ public class A1 extends BaseClass {
 		driver.get("https://en-gb.facebook.com/");
 		
 		WebElement email = driver.findElement(By.id("email"));
-		email.sendKeys(ajithvijayakumar05@gmail.com);
+		email.sendKeys("ajithvijayakumar05@gmail.com");
 		
 		WebElement password = driver.findElement(By.name("pass"));
-		password.sendKeys(pass);
+		password.sendKeys("pass");
 	
 	}
 	@Test(enabled=false)
