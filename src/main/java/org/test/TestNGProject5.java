@@ -1,18 +1,21 @@
 package org.test;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.Date;
 
 import org.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class SampleTestTNG9 extends BaseClass {
+public class TestNGProject5 extends BaseClass {
 	
 	@BeforeClass
 	private void launchTheBrowser()
@@ -32,18 +35,22 @@ public class SampleTestTNG9 extends BaseClass {
 		Date d=new Date();
 		System.out.println(d);
 	}
+	@AfterClass
+	private void closeTheBrowser() {
+		closeEntireBrowser();
+	}
 	
 	@Test
 	private void tc1()
 	{
 		driver.get("https://en-gb.facebook.com/");
 		
-		String title = pageTitle();
+		String URL = pageUrl();
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.sendKeys("ajithkumarvam@gmail.com");
-		///hardAssert
-		Assert.assertTrue(title.contains("facebook"), "Check your page title");
+		//hardAssert
+		Assert.assertTrue(URL.contains("facebook"), "Check your page title");
 		
 		WebElement password = driver.findElement(By.name("pass"));
 		password.sendKeys("Ajith!123");	
@@ -53,13 +60,13 @@ public class SampleTestTNG9 extends BaseClass {
 	{
 		driver.get("https://en-gb.facebook.com/");
 		
-		String title = pageTitle();
+		String URL = pageUrl();
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.sendKeys("ajithkumarvam1@gmail.com");
-		///softAssert
+		//softAssert
 		SoftAssert s=new SoftAssert();
-		s.assertTrue(title.contains("facebook"), "Check your page title");
+		s.assertTrue(URL.contains("facebook"), "Check your page url");
 		WebElement password = driver.findElement(By.name("pass"));
 		password.sendKeys("Ajith!123");	
 		
