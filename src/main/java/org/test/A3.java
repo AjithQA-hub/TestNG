@@ -1,7 +1,11 @@
 package org.test;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -25,10 +29,9 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 	}
 	
 	@AfterClass
-	private void endDate()
+	private void closeTheBrowser()
 	{
-		Date d=new Date();
-		System.out.println(d);
+		closeEntireBrowser();
 	}
 	
 	@BeforeClass
@@ -37,6 +40,13 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 		Date d=new Date();
 		System.out.println(d);	  
 	}
+	@AfterClass
+	private void endDate()
+	{
+		Date d=new Date();
+		System.out.println(d);	  
+	}
+	
 	@DataProvider(name="Sample Data")
 	private Object[][] data() {
 		return new Object[][]
@@ -50,12 +60,12 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 
 	}
 	@Test(dataProvider = "Sample Data")
-	private void tc9(String e,String pass) {
+	private void tc2(String mail,String pass) {
 		
 		driver.get("https://en-gb.facebook.com/");
 		
 		WebElement email = driver.findElement(By.id("email"));
-		email.sendKeys(e);
+		email.sendKeys(mail);
 		
 		WebElement password = driver.findElement(By.name("pass"));
 		password.sendKeys(pass);
@@ -66,7 +76,7 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 	{
 		return new Object[][]
 				{
-			{"football"},
+			{"Monitor"},
 			{"Sanitizer"},
 			{"xbox"},
 			{"play station"},
@@ -74,10 +84,11 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 				};
 	}
 	@Test(dataProvider = "Amazon Data")
-	private void tc1(String product) throws AWTException
+	private void tc1(String product) throws AWTException, InterruptedException
 	{
 		launchUrl("https://www.amazon.com/");
 		windowMaximize();
+		Thread.sleep(1000);
 		WebElement srcBox = driver.findElement(By.id("twotabsearchtextbox"));
 		srcBox.sendKeys(product);
 		
@@ -86,7 +97,7 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 		r.keyRelease(KeyEvent.VK_ENTER);
 	}
 	@Test(enabled=false)
-	private void tc5()
+	private void tc3()
 	{
 		launchUrl("https://www.flipkart.com/");
 	}
