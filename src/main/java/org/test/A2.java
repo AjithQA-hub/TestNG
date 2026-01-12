@@ -23,16 +23,9 @@ public class A2 extends BaseClass {		//sampleTest2 class use
 	@AfterClass
 	private void endDate()
 	{
-		Date d=new Date();
-		System.out.println(d);
+		closeEntireBrowser();
 	}
 	
-	@BeforeClass
-	private void startDate()
-	{
-		Date d=new Date();
-		System.out.println(d);	  
-	}
 	@DataProvider(name="Sample Data")
 	private Object[][] data() {
 		return new Object[][]
