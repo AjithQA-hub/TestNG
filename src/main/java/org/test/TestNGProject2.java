@@ -1,14 +1,13 @@
 package org.test;
 
 import java.util.Date;
-
 import org.base.BaseClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-public class TeastNGProject2 extends BaseClass{
+public class TestNGProject2 extends BaseClass{
 	
 	@Test
 	public void tc1() {
@@ -44,7 +43,7 @@ public class TeastNGProject2 extends BaseClass{
 	
 	@AfterClass
 	private void closeTheBrowser() {
-		System.out.println("Browser Close");
+		closeEntireBrowser();
 	}
 
 }
