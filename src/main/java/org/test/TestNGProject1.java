@@ -1,5 +1,7 @@
 package org.test;
 
+import java.util.Date;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -25,13 +27,15 @@ public class TestNGProject1 {
 	
 	@BeforeMethod
 	private void startDate() {
-		System.out.println("Test Case starting Date and Time");
+		Date d = new Date();
+		System.out.println(d);
 	}
 	
 	@AfterMethod
 	private void endDate()
 	{
-		System.out.println("Test Case Ending Date and Time");
+		Date d = new Date();
+		System.out.println(d);
 	}
 	
 	@BeforeClass
