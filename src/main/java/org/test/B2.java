@@ -2,7 +2,7 @@ package org.test;
 
 import org.testng.annotations.Test;
 
-public class B3 {
+public class B2 {
 	
 	@Test(dataProvider = "Amazon Data",dataProviderClass = A3.class)
 	private void tc33(String data) {
