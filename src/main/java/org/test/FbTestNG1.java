@@ -44,7 +44,7 @@ public class FbTestNG1 extends BaseClass{
 	private void launchTheBrowser() {
 		launchBrowser();
 		windowMaximize();
-		System.out.println("Browser Close");
+		System.out.println("Browser Open");
 	}
 	
 	@AfterClass
