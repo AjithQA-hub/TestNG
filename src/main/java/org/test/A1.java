@@ -22,16 +22,9 @@ public class A1 extends BaseClass {
 	@AfterClass
 	private void endDate()
 	{
-		Date d=new Date();
-		System.out.println(d);
+		closeEntireBrowser();
 	}
 	
-	@BeforeClass
-	private void startDate()
-	{
-		Date d=new Date();
-		System.out.println(d);	  
-	}
 	@Parameters({"user","pass"})
 	@Test
 	private void tc9(@Optional("abc@gmail.com")String e,@Optional("12345")String pass) {
