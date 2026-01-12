@@ -3,8 +3,8 @@ package org.test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import java.util.Date;
 import org.base.BaseClass;
+import org.base.FbLogin;
 
 
 public class A extends BaseClass {
@@ -19,17 +19,10 @@ public class A extends BaseClass {
 	@AfterClass
 	private void endDate()
 	{
-		Date d=new Date();
-		System.out.println(d);
+		closeEntireBrowser();
 	}
 	
-	@BeforeClass
-	private void startDate()
-	{
-		Date d=new Date();
-		System.out.println(d);	  
-	}
-	@Test
+	@Test (invocationCount=3)
 	private void tc1() {
 		launchUrl("https://en-gb.facebook.com/");
 		FbLogin f=new FbLogin();
@@ -40,7 +33,7 @@ public class A extends BaseClass {
 	private void tc5() {
 		launchUrl("https://www.snapdeal.com/");
 	}
-	@Test (invocationCount=3) 
+	@Test
 	private void tc2() {
 		launchUrl("https://www.flipkart.com/");
 	}
