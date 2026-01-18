@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-//import java.nio.file.FileAlreadyExistsException;
-//import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -182,32 +180,6 @@ public class BaseClass {
 		FileOutputStream fos=new FileOutputStream(f);
 		wb.write(fos);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 
 }
