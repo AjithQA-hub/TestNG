@@ -16,7 +16,7 @@ public class FbTestNG1 extends BaseClass{
 		launchUrl("https://www.facebook.com/");
 		FbLogin f=new FbLogin();
 		passText("9003493942", f.getEmail());
-		passText("Ajith!123", f.getPassword());
+		//passText("Ajith!123", f.getPassword());
 	}
 	@Test(enabled=false)
 	public void tc9() {
