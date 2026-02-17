@@ -36,8 +36,4 @@ public class FbLogin extends BaseClass{
 	public WebElement getLoginBtn() {
 		return loginBtn;
 	}
-	
-	
-	
-
 }
