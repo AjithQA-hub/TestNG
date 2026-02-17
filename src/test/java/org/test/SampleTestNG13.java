@@ -41,7 +41,7 @@ public class SampleTestNG13 extends BaseClass {
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.sendKeys("ajithkumarvam@gmail.com");
-		///hardAssert
+		//hardAssert
 		Assert.assertTrue(title.contains("facebook"), "Check your page title");
 		
 		WebElement password = driver.findElement(By.name("pass"));
@@ -56,7 +56,7 @@ public class SampleTestNG13 extends BaseClass {
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.sendKeys("ajithkumarvam1@gmail.com");
-		///softAssert
+		//softAssert
 		SoftAssert s=new SoftAssert();
 		s.assertTrue(title.contains("facebook"), "Check your page title");
 		WebElement password = driver.findElement(By.name("pass"));
