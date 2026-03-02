@@ -88,6 +88,6 @@ public class TestNGProject5 extends BaseClass {
 //assertTrue(condition/Actual, message)
 		//Message - should be in string
 		//Condition - mean what should actually test
-//assertFalse(message, condition/Actual)
+//assertFalse(condition/Actual, message)
         //Message - should be in string
 		//Condition - mean what should actually test
