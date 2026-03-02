@@ -70,3 +70,16 @@ public class SampleTestNG13 extends BaseClass {
 		launchUrl("https://www.flipkart.com/");
 	}
 }
+
+//hardAssert
+		//Assert.assertTrue(URL.contains("facebook"), "Check your page title");
+//softassert
+        //SoftAssert s=new SoftAssert();
+		//s.assertTrue(URL.contains("facebook"), "Check your page url");
+//---------------------------------
+//assertTrue(condition/Actual, message)
+		//Message - should be in string
+		//Condition - mean what should actually test
+//assertFalse(message, condition/Actual)
+        //Message - should be in string
+		//Condition - mean what should actually test
