@@ -78,3 +78,6 @@ public class TestNGProject5 extends BaseClass {
 		launchUrl("https://www.flipkart.com/");
 	}
 }
+//assertTrue(condition/Actual, message)
+		//Message - should be in string
+		//Condition - mean what should actually test
