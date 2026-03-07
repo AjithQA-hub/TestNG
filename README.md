@@ -54,7 +54,7 @@ These annotations help control the **execution flow of test cases**.
 
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/AjithQA-hub/TestNG.git
 ```
 
 ### 2️⃣ Open the Project
