@@ -24,7 +24,6 @@ public class FbLogin extends BaseClass{
 	private WebElement loginBtn;
 	
 	//3.getters to access webElements outside the class
-
 	public WebElement getEmail() {
 		return email;
 	}
