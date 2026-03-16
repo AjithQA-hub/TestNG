@@ -17,21 +17,6 @@ The project demonstrates how to automate web application testing using TestNG an
 ## 📂 Project Structure
 
 ```
-ProjectName
-│
-├── src/test/java
-│   └── Test Classes
-│
-├── src/main/java
-│   └── Utility Classes
-│
-├── testng.xml
-│
-├── pom.xml
-│
-└── README.md
-```
-
 ---
 
 ## ⚙️ TestNG Annotations Used
