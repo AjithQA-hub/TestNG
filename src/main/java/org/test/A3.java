@@ -10,7 +10,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -51,7 +50,7 @@ public class A3 extends BaseClass {		//sampleTest2 class use
 		
 		driver.get("https://en-gb.facebook.com/");
 		
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email"));
 		email.sendKeys(mail);
 		
 		WebElement password = driver.findElement(By.name("pass"));
