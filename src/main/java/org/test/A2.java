@@ -43,7 +43,7 @@ public class A2 extends BaseClass {		//sampleTest2 class use
 		
 		driver.get("https://en-gb.facebook.com/");
 		
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email"));
 		email.sendKeys(e);
 		
 		WebElement password = driver.findElement(By.name("pass"));
