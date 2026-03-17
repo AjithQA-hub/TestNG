@@ -60,7 +60,7 @@ public class TestNGProject5 extends BaseClass {
 		
 		String URL = pageUrl();
 		
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email"));
 		email.sendKeys("ajithkumarvam1@gmail.com");
 		//softAssert
 		SoftAssert s=new SoftAssert();
