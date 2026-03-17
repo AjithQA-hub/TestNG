@@ -29,7 +29,7 @@ public class TestNGProject6 extends BaseClass { // SampleTestTNG10
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://en-gb.facebook.com/");
 		driver.manage().window().maximize();
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email"));
 		email.sendKeys("ajithkumarvam1@gmail.com");
 		driver.close();
 	}
