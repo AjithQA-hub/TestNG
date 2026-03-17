@@ -31,7 +31,7 @@ public class A1 extends BaseClass {
 		
 		driver.get("https://en-gb.facebook.com/");
 		
-		WebElement email = driver.findElement(By.name("email");
+		WebElement email = driver.findElement(By.name("email"));
 		email.sendKeys("ajithvijayakumar05@gmail.com");
 		
 		WebElement password = driver.findElement(By.name("pass"));
