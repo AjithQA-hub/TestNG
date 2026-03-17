@@ -45,7 +45,7 @@ public class TestNGProject5 extends BaseClass {
 		
 		String URL = pageUrl();
 		
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email");
 		email.sendKeys("ajithkumarvam@gmail.com");
 		//hardAssert
 		Assert.assertTrue(URL.contains("facebook"), "Check your page title");
