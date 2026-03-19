@@ -1,7 +1,6 @@
 package org.test;
 
 import java.util.Date;
-
 import org.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
