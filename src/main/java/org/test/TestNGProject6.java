@@ -10,7 +10,7 @@ import org.base.FbLogin;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestNGProject6 extends BaseClass { // SampleTestTNG10
+public class TestNGProject6 extends BaseClass {
  	
 	@Test
 	private void tc3() {
