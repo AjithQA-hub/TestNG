@@ -3,16 +3,12 @@
 This repository contains a **test automation framework** built using **Java, Selenium WebDriver, and TestNG**.  
 The project demonstrates how to automate web application testing using TestNG annotations and execute tests using `testng.xml`.
 
----
-
 ## 📌 Technologies Used
 - Java
 - Selenium WebDriver
 - TestNG
 - Maven
 - Git & GitHub
-
----
 
 ## 📂 Project Structure
 
